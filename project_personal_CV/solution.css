@@ -1,96 +1,80 @@
-/* Base Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0e4d7;
-    /* Soft beige background */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-#cv {
-    width: 75%;
-    margin: 30px auto;
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
     padding: 20px;
-    background-color: #fff;
-    /* White background for CV */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for the CV */
 }
 
-header {
+.header {
+    /* estilo general de todo lo correspondiente al header */
     text-align: center;
-    border-bottom: 3px solid #3498db;
-    /* Blue border beneath the header */
+    margin-bottom: 20px;
 }
 
-header h1 {
-    margin: 0;
-    color: #2c3e50;
-    /* Dark blue shade for name */
+.header h1 {
+    /* estilo del primer título, mi nombre en tamaño de letra y espacio abajo  */
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 
-header p {
-    font-style: italic;
-    color: #3498db;
-    /* Matching blue for role/title */
+.header p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
 }
 
-h2 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    color: #2c3e50;
-    /* Dark blue shade for section titles */
+.section {
+    margin-bottom: 20px;
 }
 
-/* Contact Details */
-#contact {
-    float: right;
-    /* Positioned to the right */
-    width: 30%;
-    /* Taking 30% width of the container */
-    margin-right: 20px;
+.section-title { 
+    /* este es el estilo para los títulos de cada sección */
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
 }
 
-#contact address p {
-    margin: 5px 0;
-    border-left: 5px solid #3498db;
-    /* Blue border on the left */
-    padding-left: 10px;
-    /* Spacing between the border and text */
-}
-
-/* Clearing the floats for the sections below the contact */
-#education,
-#skills,
-#experience {
-    clear: both;
-}
-
-/* Skills */
-#skills li {
+.contact-info, .skills, .languages, .experience ul {
     list-style-type: none;
-    margin: 5px 0;
-    border-left: 5px solid #3498db;
-    /* Blue border on the left */
-    padding-left: 10px;
-    /* Spacing between the border and text */
+    padding: 0;
 }
 
-/* Experience */
-#experience article {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #f9f9f9;
-    /* Light gray background */
-    border-radius: 5px;
-    /* Rounded corners */
+.contact-info li, .skills li, .languages li, .experience li {
+    margin-bottom: 80px;
 }
 
-#experience article h3 {
-    margin-top: 0;
+ul {
+    padding-left: 20px;
 }
 
-#experience article p {
-    margin: 5px 0;
+.skills li, .languages li {
+    display: inline-block; /* Hace que los elementos se alineen uno al lado del otro */
+    width: 48%;
+}
+
+.experience {
+    margin-top: 15px;
+}
+
+.experience h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.experience p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.experience ul {
+    padding-left: 15px;
 }
